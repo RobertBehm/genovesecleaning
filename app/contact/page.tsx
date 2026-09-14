@@ -17,7 +17,7 @@ export default function ContactPage() {
       <SectionHeading
         eyebrow="Contact"
         title="Request a quote for Southern New Hampshire cleaning service."
-        description="Share the size of the space, the town, and the kind of cleaning you’re looking for. This page is ready to collect leads now, and the form can later be connected to your CRM, inbox, or booking workflow."
+        description="Share the size of the space, the town, and the kind of cleaning you’re looking for. Your inquiry will be saved securely for follow-up once the database connection is configured."
       />
 
       <section className="grid gap-4 md:grid-cols-[1.05fr_0.95fr]">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { SectionHeading } from "@/components/section-heading";
+import { TrustBar } from "@/components/trust-bar";
 import { buttonClassName } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { siteConfig, serviceHighlights } from "@/lib/site";
@@ -12,29 +13,24 @@ export default function HomePage() {
       <section className="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-[1.08fr_0.92fr] md:px-6 md:py-20">
         <div>
           <p className="text-sm font-extrabold uppercase tracking-[0.16em] text-[var(--primary)]">
-            Southern New Hampshire Luxury Home Cleaning
+            SOUTHERN NEW HAMPSHIRE&apos;S TRUSTED CLEANING SERVICE
           </p>
           <h1 className="mt-4 max-w-4xl font-serif text-5xl leading-none text-[var(--heading)] md:text-7xl">
-            A polished home, styled with care and kept with pride.
+            Professional House Cleaning Across Southern New Hampshire
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--muted)]">
-            Genovese Cleaning Service helps busy households stay ahead of the mess with recurring cleanings,
-            detailed deep cleans, move-related service, and flexible office upkeep throughout Southern New Hampshire,
-            delivered with a more refined, premium service experience.
+            Reclaim your time and come home to a spotless space. Genovese Cleaning Service provides reliable,
+            fully insured residential cleaning throughout Southern New Hampshire, including recurring cleaning,
+            deep cleaning, move-in and move-out cleaning, and more.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/contact" className={buttonClassName({ size: "lg" })}>
-              Get a Free Quote
+              GET A FREE QUOTE
             </Link>
             <Link href="/services" className={buttonClassName({ variant: "secondary", size: "lg" })}>
-              Explore Services
+              OUR SERVICES
             </Link>
           </div>
-          <ul className="mt-8 grid gap-3 text-[var(--muted)]">
-            <li>Background-checked, fully insured cleaning teams</li>
-            <li>Eco-conscious products that are family and pet considerate</li>
-            <li>Flexible weekly, bi-weekly, monthly, and one-time scheduling</li>
-          </ul>
         </div>
         <Card className="overflow-hidden border-[var(--primary)]/35 bg-[radial-gradient(circle_at_top,rgba(201,161,74,0.14),transparent_34%),linear-gradient(180deg,rgba(20,20,20,0.98),rgba(10,10,10,0.98))] p-4 md:p-5">
           <div className="relative overflow-hidden rounded-[24px] border border-[var(--border)]/80">
@@ -60,26 +56,13 @@ export default function HomePage() {
         </Card>
       </section>
 
-      <section className="mx-auto grid max-w-6xl gap-4 px-4 md:grid-cols-3 md:px-6">
-        {[
-          ["Bonded & Insured", "Professional coverage and careful handling on every visit."],
-          ["Consistent Teams", "Friendly cleaners who follow a documented checklist and clear standards."],
-          ["Eco-Conscious Products", "Thoughtful products chosen for homes with kids, pets, and busy schedules."]
-        ].map(([title, text]) => (
-          <Card key={title} className="rounded-3xl">
-            <CardContent className="p-6">
-              <h3 className="font-serif text-2xl text-[var(--heading)]">{title}</h3>
-              <p className="mt-3 text-[var(--muted)]">{text}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </section>
+      <TrustBar />
 
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <SectionHeading
           eyebrow="What We Do"
-          title="Cleaning services built around real New Hampshire households."
-          description="Whether you need regular upkeep or a one-time reset before a move, our service plans are designed around the pace of family life, work travel, and seasonal weather."
+          title="Reliable Cleaning for Busy Homes and Offices"
+          description="From recurring cleaning to deep cleans, move-in and move-out service, and office cleaning, Genovese Cleaning Service makes it easier to keep your space clean and cared for throughout Southern New Hampshire."
         />
         <div className="grid gap-4 md:grid-cols-3">
           {serviceHighlights.map((service) => (
@@ -115,14 +98,13 @@ export default function HomePage() {
         <div>
           <SectionHeading
             eyebrow="Why Genovese"
-            title="Cleaning you can trust from a team that understands the region."
-            description="Southern New Hampshire homes deal with snow boots, slush, pollen, school-night chaos, and busy commutes. We build cleaning plans that feel practical, polished, and easy to maintain week after week."
+            title="Cleaning You Can Trust, From a Local Team You Can Count On"
           />
         </div>
         <div className="grid gap-4">
           {[
             ["Thorough, checklist-based visits", "We focus on consistency so your kitchen, baths, floors, and detail surfaces stay reliably clean."],
-            ["Season-aware service", "From mudroom buildup in spring to winter salt and dust, we prioritize what local homes need most."],
+            ["Carefully Vetted & Trained Team", "Every member of our cleaning team is screened, vetted, and trained before entering your home."],
             ["Easy communication", "Clear scheduling, friendly updates, and a direct local point of contact for questions or changes."]
           ].map(([title, text]) => (
             <Card key={title} className="bg-[linear-gradient(180deg,rgba(26,26,26,0.98),rgba(14,14,14,0.98))]">
@@ -153,6 +135,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/*
       <section className="mx-auto max-w-6xl px-4 py-20 md:px-6">
         <SectionHeading
           eyebrow="What Clients Value"
@@ -185,6 +168,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      */}
 
       <section className="mx-auto mb-12 max-w-6xl rounded-[36px] border border-[var(--border)] bg-[linear-gradient(135deg,#0f0f0f,#161616)] px-6 py-10 text-white md:px-10 md:py-12">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">

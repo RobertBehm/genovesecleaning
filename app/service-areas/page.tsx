@@ -1,3 +1,10 @@
+import { notFound } from "next/navigation";
+
+export default function ServiceAreasPage() {
+  notFound();
+}
+
+/*
 import type { Metadata } from "next";
 
 import { SectionHeading } from "@/components/section-heading";
@@ -97,3 +104,4 @@ export default function ServiceAreasPage() {
     </main>
   );
 }
+*/

@@ -15,15 +15,15 @@ export function SiteFooter() {
         </div>
         <div className="space-y-3">
           <h3 className="font-serif text-xl text-white">Explore</h3>
-          <Link className="block text-white/75" href="/about">
+          {/* <Link className="block text-white/75" href="/about">
             About
-          </Link>
+          </Link> */}
           <Link className="block text-white/75" href="/services">
             Services
           </Link>
-          <Link className="block text-white/75" href="/service-areas">
+          {/* <Link className="block text-white/75" href="/service-areas">
             Service Areas
-          </Link>
+          </Link> */}
           <Link className="block text-white/75" href="/contact">
             Contact
           </Link>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
@@ -16,30 +17,19 @@ export function BrandLogo({
   inverted = false
 }: BrandLogoProps) {
   const content = (
-    <div className={cn("inline-flex items-center gap-3", className)}>
-      <div className="flex flex-col leading-none">
-        <span
-          className={cn(
-            "font-script text-5xl leading-none tracking-tight",
-            inverted ? "text-[var(--ivory)]" : "text-[var(--primary)]",
-            compact ? "text-4xl" : "text-5xl"
-          )}
-        >
-          Genovese
-        </span>
-        <div className="mt-1 flex items-center gap-3">
-          <span className="h-px w-10 bg-[var(--primary)]/80" />
-          <span
-            className={cn(
-              "text-[10px] font-semibold uppercase tracking-[0.34em]",
-              inverted ? "text-white/76" : "text-[var(--muted)]"
-            )}
-          >
-            Cleaning Service
-          </span>
-          <span className="h-px w-10 bg-[var(--primary)]/80" />
-        </div>
-      </div>
+    <div className={cn("inline-flex items-center", className)}>
+      <Image
+        src="/genovese-cleaning-logo.png"
+        alt="Genovese Cleaning Service"
+        width={2000}
+        height={802}
+        className={cn(
+          "h-auto w-[190px] object-contain",
+          compact ? "md:w-[170px]" : "md:w-[230px]",
+          inverted && "brightness-110"
+        )}
+        priority={!compact}
+      />
     </div>
   );
 

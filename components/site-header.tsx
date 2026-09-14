@@ -4,21 +4,15 @@ import { BrandLogo } from "@/components/brand-logo";
 import { buttonClassName } from "@/components/ui/button";
 
 const links = [
-  { href: "/about", label: "About" },
+  // { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
-  { href: "/service-areas", label: "Service Areas" },
+  // { href: "/service-areas", label: "Service Areas" },
   { href: "/contact", label: "Contact" }
 ];
 
 export function SiteHeader() {
   return (
     <header className="gold-divider border-b border-[var(--border)]/60 bg-[rgba(10,10,10,0.92)] backdrop-blur">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 text-sm text-[var(--muted)]/90 md:flex-row md:items-center md:justify-between md:px-6">
-        <p>Locally focused cleaning for Southern New Hampshire homes and offices.</p>
-        <Link className="font-semibold text-[var(--primary)]" href="/contact">
-          Request a free quote
-        </Link>
-      </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 md:flex-row md:items-center md:justify-between md:px-6">
         <BrandLogo />
         <nav className="flex flex-wrap items-center gap-3 text-sm font-semibold text-[var(--muted)]/90 md:gap-5">
